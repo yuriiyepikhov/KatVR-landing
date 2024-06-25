@@ -653,6 +653,15 @@ aboutPlayVideoBtn.addEventListener('click', () => {
 
 // Pause YouTube Video
 
+const body = document.body;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const script = document.createElement('script');
+
+  script.src = 'https://www.youtube.com/iframe_api';
+  body.append(script);
+});
+
 let player = null;
 
 function onYouTubeIframeAPIReady() {
