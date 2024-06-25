@@ -12,7 +12,8 @@
 
     @include on-laptop {
       justify-items: center;
-      padding: 100px 0 102px;
+      padding-top: 100px;
+      padding-bottom: 102px;
     }
 
     @include on-desktop {

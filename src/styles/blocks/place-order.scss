@@ -1,6 +1,8 @@
 .place-order {
   @include grid-container;
 
+  padding-inline: 0;
+
   @include on-laptop {
     grid-template-columns: repeat(6, 70px);
   }

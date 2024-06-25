@@ -22,12 +22,17 @@
 
 @mixin grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 130px);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  place-content: start center;
+  align-content: start;
+
+  box-sizing: border-box;
+  padding-inline: 20px;
 
   @include on-tablet {
     grid-template-columns: repeat(6, 100px);
+    justify-content: center;
+    padding-inline: 0;
   }
 
   @include on-laptop {

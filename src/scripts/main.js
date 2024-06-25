@@ -338,11 +338,11 @@ function setColor(label, input, labelColor, inputBorderColor) {
 
 const buyNowLink = document.querySelector('.page__buy-now');
 const getInTouchSection = document.getElementById('contact');
-const getInTouchTop = getInTouchSection.offsetTop;
-const windowHeight = window.innerHeight;
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
+  const getInTouchTop = getInTouchSection.offsetTop;
+  const windowHeight = window.innerHeight;
 
   if (scrollY > getInTouchTop - windowHeight) {
     buyNowLink.classList.add('page__buy-now--hidden');
@@ -395,21 +395,6 @@ faqMoreBtn.addEventListener('click', () => {
   if (questions.length === selectedQuestions.length) {
     faqMoreBtn.disabled = true;
   }
-});
-
-// Closing The Video In The Correct Section
-
-const headerPlayVideoBtn = document.querySelector('.header__play-video');
-const aboutPlayVideoBtn = document.querySelector('.about__play-video');
-const videoAside = document.getElementById('video');
-const videoCloseIcon = videoAside.querySelector('.top-bar__icon--close');
-
-headerPlayVideoBtn.addEventListener('click', () => {
-  videoCloseIcon.setAttribute('href', '#page-top');
-});
-
-aboutPlayVideoBtn.addEventListener('click', () => {
-  videoCloseIcon.setAttribute('href', '#about');
 });
 
 // Select Quantity
@@ -650,3 +635,47 @@ orderPurchaseBtn.addEventListener('click', () => {
     order2PrevSelectedLi.classList.remove('select-qty__item--selected');
   }
 });
+
+// Close YouTube Video In The Correct Section
+
+const videoAside = document.getElementById('video');
+const headerPlayVideoBtn = document.querySelector('.header__play-video');
+const aboutPlayVideoBtn = document.querySelector('.about__play-video');
+const videoCloseIcon = videoAside.querySelector('.top-bar__icon--close');
+
+headerPlayVideoBtn.addEventListener('click', () => {
+  videoCloseIcon.setAttribute('href', '#page-top');
+});
+
+aboutPlayVideoBtn.addEventListener('click', () => {
+  videoCloseIcon.setAttribute('href', '#about');
+});
+
+// Pause YouTube Video
+
+let player = null;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('youtube-player', {
+    width: '100%',
+    height: '100%',
+    videoId: 'SvTbB19bvIw',
+    playerVars: {
+      'playsinline': 1,
+      'autoplay': 0
+    },
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady() {
+  videoCloseIcon.addEventListener('click', pauseVideo);
+}
+
+function pauseVideo() {
+  if (player) {
+    player.pauseVideo();
+  }
+}

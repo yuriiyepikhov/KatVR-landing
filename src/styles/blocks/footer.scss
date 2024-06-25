@@ -4,7 +4,8 @@
     @include grid-container;
 
     box-sizing: border-box;
-    padding: 45px 0 50px;
+    padding-top: 45px;
+    padding-bottom: 50px;
     background-color: $black-color;
 
     @include on-tablet {
@@ -66,13 +67,17 @@
     align-self: end;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 22px;
 
     @include on-tablet {
       grid-column: -2 / -1;
       grid-row: 1 / 2;
       align-self: center;
+
+      justify-content: space-between;
+      gap: 0;
     }
 
     @include on-laptop {

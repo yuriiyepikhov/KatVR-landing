@@ -95,20 +95,22 @@
     }
   }
 
-  &__description {
+  &__mobile-description {
     margin: 0;
+    height: 48px;
 
     @include on-tablet {
       display: none;
     }
+  }
 
-    &--full {
-      display: none;
+  &__full-description {
+    display: none;
 
-      @include on-tablet {
-        display: block;
-        text-align: center;
-      }
+    @include on-tablet {
+      display: block;
+      margin: 0;
+      text-align: center;
     }
   }
 }

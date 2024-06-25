@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
+    <script src="https://www.youtube.com/iframe_api" defer></script>
   </head>
 
   <body class="page__body" id="page-top">
@@ -35,11 +36,13 @@
           </div>
         </div>
 
-        <img
-          class="header__img"
-          src="./images/main-img/main-img.png"
-          alt="KatVR Loco"
-        />
+        <div class="header__img-wrapper">
+          <img
+            class="header__img"
+            src="./images/main-img/main-img.png"
+            alt="KatVR Loco"
+          />
+        </div>
 
         <div class="header__slider">
           <div class="slider slider--header">
@@ -256,11 +259,10 @@
               <h3 class="card-more__title card-more__title--education">
                 EDUCATION
               </h3>
-              <p class="card-more__description">
+              <p class="card-more__mobile-description">
                 Create educational simulations, trainings, and much more with...
               </p>
-
-              <p class="card-more__description card-more__description--full">
+              <p class="card-more__full-description">
                 Create educational simulations, trainings, and much more with
                 unlimited virtual space and minimum physical space
               </p>
@@ -273,12 +275,11 @@
             <div class="card-more">
               <div class="card-more__icon card-more__icon--real-estate"></div>
               <h3 class="card-more__title">REAL ESTATE</h3>
-              <p class="card-more__description">
+              <p class="card-more__mobile-description">
                 Design architectural projects in a deeply realistic
                 environment...
               </p>
-
-              <p class="card-more__description card-more__description--full">
+              <p class="card-more__full-description">
                 Design architectural projects in a deeply realistic environment,
                 allowing visitors to freely walk around, and feel their vibe
               </p>
@@ -289,11 +290,10 @@
             <div class="card-more card-more--fitness">
               <div class="card-more__icon card-more__icon--fitness"></div>
               <h3 class="card-more__title">FITNESS</h3>
-              <p class="card-more__description">
+              <p class="card-more__mobile-description">
                 Combine business with pleasure, and discover countless ways...
               </p>
-
-              <p class="card-more__description card-more__description--full">
+              <p class="card-more__full-description">
                 Combine business with pleasure, and discover countless ways to
                 stay fit while playing your favorite VR Games!
               </p>
@@ -308,12 +308,11 @@
                 class="card-more__icon card-more__icon--social-interactions"
               ></div>
               <h3 class="card-more__title">SOCIAL INTERACTIONS</h3>
-              <p class="card-more__description">
+              <p class="card-more__mobile-description">
                 Hang out with your friends in the virtual world when you
                 can't...
               </p>
-
-              <p class="card-more__description card-more__description--full">
+              <p class="card-more__full-description">
                 Hang out with your friends in the virtual world when you can't
                 meet space requirements
               </p>
@@ -325,7 +324,7 @@
       <section class="about" id="about">
         <div class="about__content">
           <div class="about__top">
-            <h2 class="section-title about__title">
+            <h2 class="section-title about__top-title">
               ABOUT
               <span>PRODUCT</span>
             </h2>
@@ -376,7 +375,7 @@
               </div>
             </div>
 
-            <p class="about__description">
+            <p class="about__top-description">
               KAT loco is a foot-based VR locomotion system that gives complete
               physical control over lower-body actions, allowing you to freely
               walk, run, and carry out just any other movement in virtual
@@ -388,12 +387,12 @@
           <div class="about__bottom">
             <p class="about__hello">Hello,</p>
             <h2
-              class="section-title section-title--nice-to-meet about__title about__title--nice-to-meet"
+              class="section-title section-title--nice-to-meet about__bottom-title"
             >
               NICE TO MEET
               <span>YOU!</span>
             </h2>
-            <p class="about__description about__description--nice-to-meet">
+            <p class="about__bottom-description">
               KAT VR is an independent company dedicated to the research,
               development, and sales of VR Locomotion products and solutions.
               Founded in 2013, we have quickly grown to become one of the
@@ -545,7 +544,7 @@
             >
               KAT Loco offers universal compatibility across all major VR
               headsets and platforms, allowing you to play any VR game with
-              support for Free Locomotion
+              support for Free Locomotion.
             </p>
           </article>
 
@@ -843,16 +842,7 @@
         </div>
 
         <div class="video__youtube-wrapper">
-          <iframe
-            class="video__youtube"
-            width="100%"
-            height="auto"
-            src="https://www.youtube.com/embed/SvTbB19bvIw"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <div id="youtube-player" class="video__youtube-player"></div>
         </div>
       </div>
     </aside>
