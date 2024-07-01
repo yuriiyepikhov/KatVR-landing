@@ -31,7 +31,7 @@ For a live preview of the KatVR landing, please visit the [DEMO LINK](https://yu
 
 ## Mockup
 
-You can view the mockup design for the KatVR landing page [here](https://www.figma.com/file/Blpg4iapsI7fRqJeSp6DvK/KatVR?node-id=1%3A370)
+You can view the mockup design for the KatVR landing page [here](https://www.figma.com/file/Blpg4iapsI7fRqJeSp6DvK/KatVR?node-id=1%3A370).
 
 ## Running the Project Locally
 
