@@ -21,9 +21,9 @@ The landing page is developed using HTML, CSS/SCSS, and JavaScript. The page inc
 
 ## Technologies Used
 
-1. HTML: Structure and content markup.
-2. CSS/SCSS: Stylesheets for designing layouts and visual aesthetics.
-3. JavaScript: Adds interactivity and functionality to the page.
+1. **HTML**: Structure and content markup.
+2. **CSS/SCSS**: Stylesheets for designing layouts and visual aesthetics.
+3. **JavaScript**: Adds interactivity and functionality to the page.
 
 ## Preview
 
@@ -37,26 +37,40 @@ You can view the mockup design for the KatVR landing page [here](https://www.fig
 
 To run this project locally, follow these steps:
 
-1. **Fork the Repository**: Click the _Fork_ button in the top right corner of [this page](https://github.com/yuriiyepikhov/KatVR-landing) to create your copy of the repository on GitHub.
+1. **Fork the Repository**:
+   Click the **Fork** button in the top right corner of [this page](https://github.com/yuriiyepikhov/KatVR-landing) to create your copy of the repository on GitHub.
 
-2. **Clone the Repository**: Open your terminal and navigate to a directory where you want to store the project:
+2. **Clone the Repository**:
+   Open your terminal, navigate to the directory where you want to store the project, and clone the repository into that directory.:
 
+```
 mkdir KatVR-landing
 cd KatVR-landing
 git clone https://github.com/your-username/KatVR-landing.git
+```
 
-3. **Open in Code Editor**: Open the project in your code editor (for example, Visual Studio Code):
+3. **Open in Code Editor**:
+   Open the project in your code editor (for example, Visual Studio Code):
 
+```
 code KatVR-landing
+```
 
-4. **Install Dependencies**: Install the necessary dependencies using **npm**:
+4. **Install Dependencies**:
+   Install the necessary dependencies using **npm**:
 
+```
 npm install
+```
 
-5. **Start the Project**: Start the project locally:
+5. **Start the Project**:
+   Start the project locally:
 
+```
 npm start
+```
 
-6. **View in Browser**: Once the project has started, open your web browser and go to http://localhost:3000 (or another port specified in the console output) to view the KatVR landing page.
+6. **View in Browser**:
+   Once the project has started, open your web browser and go to http://localhost:3000 (or another port specified in the console output) to view the KatVR landing page.
 
 These steps will allow you to run the project locally and make modifications as needed.
