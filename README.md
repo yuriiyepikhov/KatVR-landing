@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
    Click the **Fork** button in the top right corner of [this page](https://github.com/yuriiyepikhov/KatVR-landing) to create your copy of the repository on GitHub.
 
 2. **Clone the Repository**:
-   Open your terminal, navigate to the directory where you want to store the project, and clone the repository into that directory.:
+   Open your terminal, navigate to the directory where you want to store the project, and clone the repository into that directory:
 
 ```
 mkdir KatVR-landing
