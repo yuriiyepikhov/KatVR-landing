@@ -64,5 +64,17 @@
       background-image,
       url(../images/icons/close-icon-hover.svg)
     );
+
+    &--back {
+      width: 8.5px;
+      height: 17px;
+      background-image: url(../images/icons/back-icon.svg);
+
+      @include on-hover(transform, scale(1.35));
+      @include on-hover(
+        background-image,
+        url(../images/icons/back-icon-hover.svg)
+      );
+    }
   }
 }

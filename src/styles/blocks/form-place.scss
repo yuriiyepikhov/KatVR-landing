@@ -1,4 +1,4 @@
-.place-order {
+.form-place {
   @include grid-container;
 
   padding-inline: 0;
@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    &--adress-2 {
+    &--address-2 {
       margin-bottom: 40px;
     }
 
@@ -33,21 +33,21 @@
 
       margin-bottom: 40px;
 
-      &--adress {
+      &--address {
         margin-bottom: 58px;
       }
 
-      &--adress-2 {
+      &--address-2 {
         margin-bottom: 58px;
       }
     }
 
     @include on-laptop {
-      &--adress {
+      &--address {
         margin-bottom: 68px;
       }
 
-      &--adress-2 {
+      &--address-2 {
         margin-bottom: 68px;
       }
     }
@@ -55,11 +55,11 @@
     @include on-desktop {
       grid-column: span 4;
 
-      &--adress {
+      &--address {
         margin-bottom: 102px;
       }
 
-      &--adress-2 {
+      &--address-2 {
         margin-bottom: 102px;
       }
     }
@@ -70,7 +70,7 @@
     font-size: 14px;
     line-height: 1em;
 
-    &:has(+ .place-order__input:focus) {
+    &:has(+ .form-place__input:focus) {
       color: $contrast-color;
     }
   }
@@ -81,9 +81,10 @@
     width: 100%;
     height: 23px;
 
-    padding: 0;
-    outline: none;
+    appearance: none;
     border: none;
+    outline: none;
+    padding: 0;
 
     background-color: transparent;
     border-bottom: 1px solid $dark-grey-color;

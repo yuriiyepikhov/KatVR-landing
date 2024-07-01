@@ -16,7 +16,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.scss" />
-    <script src="scripts/main.js" defer></script>
+    <script
+      src="scripts/main.js"
+      type="module"
+      defer
+    ></script>
   </head>
 
   <body class="page__body" id="page-top">
@@ -80,10 +84,17 @@
           <div class="header__prev-next">
             <div class="prev-next">
               <div class="prev-next__buttons">
-                <button class="prev-next__btn prev-next__btn--prev" disabled>
+                <button
+                  type="button"
+                  class="prev-next__btn prev-next__btn--prev"
+                  disabled
+                >
                   Previous
                 </button>
-                <button class="prev-next__btn prev-next__btn--next">
+                <button
+                  type="button"
+                  class="prev-next__btn prev-next__btn--next"
+                >
                   Next
                 </button>
               </div>
@@ -115,23 +126,6 @@
               alt="Logo"
             />
           </a>
-
-          <div class="select-lang">
-            <div class="select-lang__content">
-              <div class="select-lang__current-value">En</div>
-
-              <div class="select-lang__list-wrapper">
-                <ul class="select-lang__list">
-                  <li class="select-lang__item select-lang__item--selected">
-                    En
-                  </li>
-                  <li class="select-lang__item">Ua</li>
-                  <li class="select-lang__item">Ru</li>
-                  <li class="select-lang__item">Pl</li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="fixed-top__right">
@@ -180,58 +174,10 @@
               <a class="menu-nav__link" href="#contact">Contact</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#language">Language</a>
-            </li>
-            <li class="menu-nav__item">
               <a class="menu-nav__link" href="#faq">FAQ</a>
             </li>
             <li class="menu-nav__item">
               <a class="menu-nav__link" href="#help">Help</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-
-    <aside class="menu page__aside" id="language">
-      <div class="menu__content menu__content--language">
-        <div class="menu__top-bar-wrapper">
-          <div class="top-bar top-bar--back-only menu__top-bar">
-            <a class="top-bar__icon top-bar__icon--back" href="#menu"></a>
-          </div>
-        </div>
-
-        <nav class="menu-nav menu__nav">
-          <ul class="menu-nav__list">
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">English</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Arabic</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Chinese (Simplified)</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Chinese (Traditional)</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">French</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">German</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Italian</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Polish</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Russian</a>
-            </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link" href="#">Ukrainian</a>
             </li>
           </ul>
         </nav>
@@ -351,12 +297,16 @@
                   <div class="prev-next">
                     <div class="prev-next__buttons">
                       <button
+                        type="button"
                         class="prev-next__btn prev-next__btn--prev"
                         disabled
                       >
                         Previous
                       </button>
-                      <button class="prev-next__btn prev-next__btn--next">
+                      <button
+                        type="button"
+                        class="prev-next__btn prev-next__btn--next"
+                      >
                         Next
                       </button>
                     </div>
@@ -463,7 +413,7 @@
             <div
               class="tech-specs__btn-wrapper tech-specs__btn-wrapper--sensor"
             >
-              <button class="tech-specs__btn"></button>
+              <button type="button" class="tech-specs__btn"></button>
               <p class="tech-specs__description">
                 Weight: 35g/1.23oz each
                 <br />
@@ -478,7 +428,7 @@
             <div
               class="tech-specs__btn-wrapper tech-specs__btn-wrapper--batteries"
             >
-              <button class="tech-specs__btn"></button>
+              <button type="button" class="tech-specs__btn"></button>
               <p
                 class="tech-specs__description tech-specs__description--batteries"
               >
@@ -497,7 +447,7 @@
             <div
               class="tech-specs__btn-wrapper tech-specs__btn-wrapper--connection"
             >
-              <button class="tech-specs__btn"></button>
+              <button type="button" class="tech-specs__btn"></button>
               <p
                 class="tech-specs__description tech-specs__description--connection"
               >
@@ -774,7 +724,7 @@
         </div>
 
         <div class="faq__more-btn">
-          <button class="more-btn"></button>
+          <button type="button" class="more-btn"></button>
         </div>
       </div>
     </aside>
@@ -861,13 +811,13 @@
           <div class="order__top-bar-wrapper">
             <div class="order__top-bar-mob">
               <div class="top-bar top-bar--order">
-                <a class="logo" href="#page-top">
+                <div class="logo">
                   <img
                     class="logo__img"
                     src="./images/icons/logo.svg"
                     alt="Logo"
                   />
-                </a>
+                </div>
                 <a
                   class="top-bar__icon top-bar__icon--order-close"
                   href="#page-top"
@@ -891,13 +841,13 @@
           <div class="order__top-bar-wrapper">
             <div class="order__top-bar-laptop">
               <div class="top-order-laptop">
-                <a class="logo" href="#page-top">
+                <div class="logo">
                   <img
                     class="logo__img"
                     src="./images/icons/logo.svg"
                     alt="Logo"
                   />
-                </a>
+                </div>
 
                 <div class="top-order-laptop__stages">
                   <div
@@ -952,83 +902,97 @@
             </div>
           </div>
 
-          <div class="order__inputs">
-            <div class="place-order">
-              <div class="place-order__input-wrapper">
-                <label class="place-order__label" for="input-first-name">
+          <div class="order__form">
+            <div class="form-place">
+              <div class="form-place__input-wrapper">
+                <label
+                  class="form-place__label form-place__label--first-name"
+                  for="input-first-name"
+                >
                   First Name*
                 </label>
                 <input
-                  class="place-order__input"
+                  class="form-place__input"
                   id="input-first-name"
                   type="text"
                   name="first-name"
                 />
               </div>
 
-              <div class="place-order__input-wrapper">
-                <label class="place-order__label" for="input-last-name">
+              <div class="form-place__input-wrapper">
+                <label
+                  class="form-place__label form-place__label--last-name"
+                  for="input-last-name"
+                >
                   Last Name*
                 </label>
                 <input
-                  class="place-order__input"
+                  class="form-place__input"
                   id="input-last-name"
                   type="text"
                   name="last-name"
                 />
               </div>
 
-              <div class="place-order__input-wrapper">
-                <label class="place-order__label" for="input-order-email">
+              <div class="form-place__input-wrapper">
+                <label
+                  class="form-place__label form-place__label--email"
+                  for="input-order-email"
+                >
                   Email*
                 </label>
                 <input
-                  class="place-order__input"
+                  class="form-place__input"
                   id="input-order-email"
-                  type="text"
+                  type="email"
                   name="order-email"
                 />
               </div>
 
-              <div class="place-order__input-wrapper">
-                <label class="place-order__label" for="input-order-phone">
+              <div class="form-place__input-wrapper">
+                <label
+                  class="form-place__label form-place__label--phone"
+                  for="input-order-phone"
+                >
                   Phone Number*
                 </label>
                 <input
-                  class="place-order__input"
+                  class="form-place__input"
                   id="input-order-phone"
-                  type="text"
+                  type="tel"
                   name="order-phone"
                 />
               </div>
 
-              <div class="place-order__select-field">
-                <span class="place-order__select-name">Country*</span>
+              <div class="form-place__select-field">
+                <span class="form-place__select-name">Country*</span>
 
                 <div class="select select--country">
                   <div class="select__content">
-                    <div class="select__current-value">Ukraine</div>
+                    <div class="select__current-value">USA</div>
 
                     <div class="select__list-wrapper">
                       <ul class="select__list">
-                        <li class="select__item select__item--selected">
-                          Ukraine
-                        </li>
-                        <li class="select__item">Russia</li>
-                        <li class="select__item">France</li>
-                        <li class="select__item">Spain</li>
-                        <li class="select__item">United States</li>
-                        <li class="select__item">China</li>
-                        <li class="select__item">Italy</li>
-                        <li class="select__item">Turkey</li>
+                        <li class="select__item select__item--selected">USA</li>
+                        <li class="select__item">Canada</li>
+                        <li class="select__item">Australia</li>
+                        <li class="select__item">Germany</li>
+                        <li class="select__item">Latvia</li>
+                        <li class="select__item">Czechia</li>
+                        <li class="select__item">Poland</li>
+                        <li class="select__item">Ukraine</li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="place-order__select-field">
-                <span class="place-order__select-name">City*</span>
+              <div class="form-place__select-field">
+                <span
+                  class="form-place__select-name form-place__select-name--city"
+                >
+                  City*
+                </span>
 
                 <div class="select select--city">
                   <div class="select__content">
@@ -1036,14 +1000,14 @@
 
                     <div class="select__list-wrapper">
                       <ul class="select__list">
-                        <li class="select__item">Kyiv</li>
-                        <li class="select__item">Lviv</li>
-                        <li class="select__item">Zaporizhia</li>
-                        <li class="select__item">Kharkiv</li>
-                        <li class="select__item">Odessa</li>
-                        <li class="select__item">Dnipro</li>
-                        <li class="select__item">Donetsk</li>
-                        <li class="select__item">Mykolaiv</li>
+                        <li class="select__item">New York</li>
+                        <li class="select__item">San Francisco</li>
+                        <li class="select__item">Las Vegas</li>
+                        <li class="select__item">Los Angeles</li>
+                        <li class="select__item">Miami</li>
+                        <li class="select__item">Seattle</li>
+                        <li class="select__item">San Diego</li>
+                        <li class="select__item">Minneapolis</li>
                       </ul>
                     </div>
                   </div>
@@ -1051,36 +1015,39 @@
               </div>
 
               <div
-                class="place-order__input-wrapper place-order__input-wrapper--adress"
+                class="form-place__input-wrapper form-place__input-wrapper--address"
               >
-                <label class="place-order__label" for="input-shipping-adress">
-                  Shipping Adress*
+                <label
+                  class="form-place__label form-place__label--address"
+                  for="input-shipping-address"
+                >
+                  Shipping Address*
                 </label>
                 <input
-                  class="place-order__input"
-                  id="input-shipping-adress"
+                  class="form-place__input"
+                  id="input-shipping-address"
                   type="text"
-                  name="shipping-adress"
+                  name="shipping-address"
                 />
               </div>
 
               <div
-                class="place-order__input-wrapper place-order__input-wrapper--adress-2"
+                class="form-place__input-wrapper form-place__input-wrapper--address-2"
               >
-                <label class="place-order__label" for="input-shipping-adress-2">
-                  Shipping Adress 2
+                <label class="form-place__label" for="input-shipping-address-2">
+                  Shipping Address 2
                 </label>
                 <input
-                  class="place-order__input"
-                  id="input-shipping-adress-2"
+                  class="form-place__input"
+                  id="input-shipping-address-2"
                   type="text"
-                  name="shipping-adress-2"
+                  name="shipping-address-2"
                 />
               </div>
 
-              <div class="place-order__purchase-btn-wrapper">
+              <div class="form-place__purchase-btn-wrapper">
                 <a
-                  class="button button--order place-order__purchase-btn"
+                  class="button button--order form-place__purchase-btn"
                   href="#order-pay"
                 >
                   Purchase
@@ -1098,16 +1065,16 @@
           <div class="order__top-bar-wrapper">
             <div class="order__top-bar-mob">
               <div class="top-bar top-bar--order">
-                <a class="logo" href="#page-top">
+                <div class="logo">
                   <img
                     class="logo__img"
                     src="./images/icons/logo.svg"
                     alt="Logo"
                   />
-                </a>
+                </div>
                 <a
-                  class="top-bar__icon top-bar__icon--order-close"
-                  href="#page-top"
+                  class="top-bar__icon top-bar__icon--back"
+                  href="#order-place"
                 ></a>
               </div>
             </div>
@@ -1128,13 +1095,13 @@
           <div class="order__top-bar-wrapper">
             <div class="order__top-bar-laptop order__top-bar-laptop--pay">
               <div class="top-order-laptop">
-                <a class="logo" href="#page-top">
+                <div class="logo">
                   <img
                     class="logo__img"
                     src="./images/icons/logo.svg"
                     alt="Logo"
                   />
-                </a>
+                </div>
 
                 <div class="top-order-laptop__stages">
                   <div class="top-order-laptop__stage">Place Order</div>
@@ -1146,7 +1113,10 @@
                   <div class="top-order-laptop__stage">Order complete</div>
                 </div>
 
-                <a class="top-order-laptop__close" href="#page-top"></a>
+                <a
+                  class="top-order-laptop__close top-order-laptop__close--back"
+                  href="#order-place"
+                ></a>
               </div>
             </div>
           </div>
@@ -1188,16 +1158,19 @@
             </div>
           </div>
 
-          <div class="order__inputs order__inputs--pay">
-            <div class="pay-order">
-              <div class="pay-order__card-num-wrapper">
-                <label class="pay-order__label" for="card-number">
+          <div class="order__form order__form--pay">
+            <div class="form-pay">
+              <div class="form-pay__card-num-wrapper">
+                <label
+                  class="form-pay__label form-pay__label--card-num"
+                  for="card-number"
+                >
                   Card Number*
                 </label>
 
-                <div class="pay-order__card-num-inputs-wrapper">
+                <div class="form-pay__card-num-inputs-wrapper">
                   <input
-                    class="pay-order__input pay-order__input--card-num"
+                    class="form-pay__input form-pay__input--card-num"
                     id="card-number"
                     name="card-number-1"
                     type="text"
@@ -1205,63 +1178,68 @@
                     maxlength="4"
                   />
                   <input
-                    class="pay-order__input pay-order__input--card-num"
+                    class="form-pay__input form-pay__input--card-num"
                     name="card-number-2"
                     type="text"
                     placeholder="0000"
                     maxlength="4"
                   />
                   <input
-                    class="pay-order__input pay-order__input--card-num"
+                    class="form-pay__input form-pay__input--card-num"
                     name="card-number-3"
                     type="text"
                     placeholder="0000"
                     maxlength="4"
                   />
                   <input
-                    class="pay-order__input pay-order__input--card-num"
+                    class="form-pay__input form-pay__input--card-num"
                     name="card-number-4"
                     type="text"
                     placeholder="0000"
                     maxlength="4"
                   />
-                  <div class="pay-order__visa-icon"></div>
+                  <div class="form-pay__visa-icon"></div>
                 </div>
               </div>
 
-              <div class="pay-order__holder-name-wrapper">
+              <div class="form-pay__holder-name-wrapper">
                 <label
-                  class="pay-order__label pay-order__label--holder"
+                  class="form-pay__label form-pay__label--holder"
                   for="card-holder"
                 >
                   Card Holder Name*
                 </label>
                 <input
-                  class="pay-order__input pay-order__input--holder-name"
+                  class="form-pay__input form-pay__input--holder"
                   id="card-holder"
                   name="holder-name"
                   type="text"
                 />
               </div>
 
-              <div class="pay-order__expiration-date">
-                <label class="pay-order__label" for="expiration-date">
+              <div class="form-pay__expiration-date">
+                <label
+                  class="form-pay__label form-pay__label--date"
+                  for="expiration-date"
+                >
                   Expiration Date*
                 </label>
                 <input
-                  class="pay-order__input pay-order__input--expiration-date"
+                  class="form-pay__input form-pay__input--date"
                   id="expiration-date"
                   name="expiration-date"
                   type="text"
-                  maxlength="7"
+                  maxlength="5"
                   placeholder="MM / YY"
                 />
               </div>
 
-              <div class="pay-order__cvv">
-                <label class="pay-order__label" for="cvv">CVV*</label>
+              <div class="form-pay__cvv">
+                <label class="form-pay__label form-pay__label--cvv" for="cvv">
+                  CVV*
+                </label>
                 <input
-                  class="pay-order__input pay-order__input--cvv"
+                  class="form-pay__input form-pay__input--cvv"
                   id="cvv"
                   name="cvv"
                   type="text"
@@ -1270,9 +1248,9 @@
                 />
               </div>
 
-              <div class="pay-order__purchase-btn-wrapper">
+              <div class="form-pay__purchase-btn-wrapper">
                 <a
-                  class="button button--order pay-order__purchase-btn"
+                  class="button button--order form-pay__purchase-btn"
                   href="#order-complete"
                 >
                   Purchase
@@ -1290,13 +1268,13 @@
           <div class="order__top-bar-wrapper">
             <div class="order__top-bar-mob">
               <div class="top-bar top-bar--order">
-                <a class="logo" href="#page-top">
+                <div class="logo">
                   <img
                     class="logo__img"
                     src="./images/icons/logo.svg"
                     alt="Logo"
                   />
-                </a>
+                </div>
                 <a
                   class="top-bar__icon top-bar__icon--order-close"
                   href="#page-top"
@@ -1320,13 +1298,13 @@
           <div class="order__top-bar-wrapper">
             <div class="order__top-bar-laptop order__top-bar-laptop--complete">
               <div class="top-order-laptop">
-                <a class="logo" href="#page-top">
+                <div class="logo">
                   <img
                     class="logo__img"
                     src="./images/icons/logo.svg"
                     alt="Logo"
                   />
-                </a>
+                </div>
 
                 <div class="top-order-laptop__stages">
                   <div class="top-order-laptop__stage">Place Order</div>

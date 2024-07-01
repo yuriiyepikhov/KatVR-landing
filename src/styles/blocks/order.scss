@@ -145,14 +145,14 @@
     }
   }
 
-  &__inputs {
+  &__form {
     grid-column: 1 / -1;
-    margin-bottom: 37px;
+    margin-bottom: 70px;
 
     width: 100%;
 
     @include on-tablet {
-      margin-bottom: 43px;
+      margin-bottom: 90px;
     }
 
     @include on-laptop {

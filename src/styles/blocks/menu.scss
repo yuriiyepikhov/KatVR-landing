@@ -13,10 +13,6 @@
 
     @include on-tablet {
       min-height: 568px;
-
-      &--language {
-        min-height: 596px;
-      }
     }
   }
 

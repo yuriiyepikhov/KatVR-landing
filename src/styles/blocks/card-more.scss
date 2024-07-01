@@ -9,7 +9,7 @@
     align-items: center;
     height: 230px;
 
-    @include on-hover(transform, scale(1.05));
+    @include on-hover(transform, scale(1.1));
 
     &--fitness {
       height: 227px;

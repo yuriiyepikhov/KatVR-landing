@@ -28,15 +28,6 @@
     }
   }
 
-  &--back-only {
-    justify-content: flex-start;
-    padding: 20px 0 38px;
-
-    @include on-tablet {
-      padding: 33px 0 47px;
-    }
-  }
-
   &--order {
     padding: 19px 0 31px;
 

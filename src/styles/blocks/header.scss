@@ -6,21 +6,21 @@
     box-sizing: border-box;
     width: 100%;
     height: fit-content;
-    min-height: 100vh;
+    min-height: 554px;
     background: $gradient;
 
     @include on-tablet {
-      height: 100vh;
-      min-height: 445px;
+      height: 445px;
+      min-height: auto;
     }
 
     @include on-laptop {
-      min-height: 740px;
+      height: 740px;
       padding-top: 196px;
     }
 
     @include on-desktop {
-      min-height: 1103px;
+      height: 1103px;
       padding-top: 327px;
     }
   }

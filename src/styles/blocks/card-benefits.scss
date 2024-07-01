@@ -11,7 +11,7 @@
 
     height: 237px;
 
-    @include on-hover(transform, scale(1.05));
+    @include on-hover(transform, scale(1.1));
   }
 
   @include on-laptop {
