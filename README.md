@@ -71,6 +71,6 @@ npm start
 ```
 
 6. **View in Browser**:
-   Once the project has started, open your web browser and go to http://localhost:3000 (or another port specified in the console output) to view the KatVR landing page.
+   Once the project has started, open your web browser and go to http://localhost:8080/ (or another port specified in the console output) to view the KatVR landing page.
 
 These steps will allow you to run the project locally and make modifications as needed.
