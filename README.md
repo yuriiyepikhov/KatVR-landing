@@ -8,13 +8,13 @@ This landing page is designed to attract attention to the KatVR product by givin
 
 ## Project Overview
 
-The landing page is developed using HTML, CSS/SCSS, and JavaScript. The page includes a variety of components aimed at enhancing user interaction and visual appeal:
+The landing page is developed using HTML, SCSS, and JavaScript. The page includes a variety of components aimed at enhancing user interaction and visual appeal:
 
 - **Video Section**: Display area for immersive multimedia content.
-- **Sliders**: Interactive elements for navigating content.
+- **Sliders**: Interactive elements.
 - **Navigation Elements**: Links and menus for easy browsing.
 - **Side Panels**: Additional content sections accessible via navigation.
-- **Description Cards**: Informative panels for displaying content details.
+- **Description Cards**: Informative areas for displaying content details.
 - **Forms**: Input fields for user interaction.
 - **Dropdown Lists**: Selection menus for user options.
 - **Hover Effects**: Visual enhancements for interactive elements.
@@ -22,8 +22,10 @@ The landing page is developed using HTML, CSS/SCSS, and JavaScript. The page inc
 ## Technologies Used
 
 1. **HTML**: Structure and content markup.
-2. **CSS/SCSS**: Stylesheets for designing layouts and visual aesthetics.
+2. **SCSS**: Stylesheets for designing layouts and visual aesthetics.
 3. **JavaScript**: Adds interactivity and functionality to the page.
+
+Together, these technologies provide a responsive landing page that adapts seamlessly to various screen sizes and devices. Whether viewed on a desktop, tablet, or smartphone, the layout and content adjust to provide an optimal user experience.
 
 ## Preview
 
@@ -41,7 +43,7 @@ To run this project locally, follow these steps:
    Click the **Fork** button in the top right corner of [this page](https://github.com/yuriiyepikhov/KatVR-landing) to create your copy of the repository on GitHub.
 
 2. **Clone the Repository**:
-   Open your terminal, navigate to the directory where you want to store the project, and clone the repository into that directory:
+   Open your terminal, navigate to the directory where you want to store the project, and clone your copy of the repository into that directory:
 
 ```
 mkdir KatVR-landing
@@ -64,7 +66,7 @@ npm install
 ```
 
 5. **Start the Project**:
-   Start the project locally:
+   Start the project locally on your device:
 
 ```
 npm start
